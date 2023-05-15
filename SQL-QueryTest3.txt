@@ -1,0 +1,19 @@
+use IzharDB
+
+Create table Employees(
+id int primary key ,
+empname varchar(30),
+salary money,
+Manager_Id int
+)
+Insert into Employees values(1,'Rohit',20000,3)
+Insert into Employees values(2,'Sangeeta',12000,5)
+Insert into Employees values(3,'Sajay',10000,5)
+  Insert into Employees values(4,'Arun',25000,3)
+
+    Insert into Employees values(5,'Zaheer',30000,null)
+    Select  employee.Empname,
+           manager.Empname as Managername
+           FROM Employees employee
+LEFT JOIN Employees manager
+ON employee.Manager_Id = manager.Id order by employee.empname

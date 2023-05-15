@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8"> 
+         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <title>Validation Page</title> 
+         
+          <script> 
+          function submit() {
+             if(!this.form.checkbox.checked) {
+
+              } else
+               { 
+                if(document.getElementById("txtpin").value == string.empty) 
+                { 
+                    alert("Pin is Mandatory"); 
+                }
+                 }
+                  } 
+                  </script>
+           </head> 
+           <body>
+             <h2>Validate Me !!</h2>
+              <form>
+                 <p>UserName<input type="text" minlength="6" maxlength="8" id="txtname"></p> 
+                 <p> Pin <input type="password" id="txtpin" > </p> 
+                 <p>States  <select id="state" name="state" class="form-select">
+                    <option value="">Select State</option>
+                    <option value="Karnatake">Karnatake</option>
+                    <option value="Ajjampur">UP</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kerale">Kerale</option>
+                    <option value="Mp">Mp</option>
+                    <option value="AP">AP</option>
+                    <option value="Tamil">Tamil NAdu</option>
+                    </select>
+                </p>
+        <p style="padding:25px;"> 
+            <button onclick="submit()">Check Form</button> </p> 
+            
